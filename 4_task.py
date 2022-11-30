@@ -6,5 +6,6 @@
 
 a = int(input('Введите число: '))
 while a != 0:
-    print(a%2, end = "")
+    res = a%2
     a = a // 2
+    print(res)

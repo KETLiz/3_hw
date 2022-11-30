@@ -4,3 +4,14 @@
 # - [2, 3, 4, 5, 6] =>[12,15,16]      ([2*6, 3*5, 4*4]);
 # - [2, 3, 5, 6] => [12,15]   ( [2*6, 3*5]) 
 
+list1 = []
+n = int(input('Введите размерность списка: '))
+for i in range(n):
+    i = int(input(f'Введите {i+1} значение списка: '))
+    list1.append(i)
+print(f'Исходный список: {list1}')
+
+list2 = []
+for i in range(n):
+    list2.append(list1[i]*list1[len(list1) - 1 - i])
+print(list2)

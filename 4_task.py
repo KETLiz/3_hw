@@ -9,5 +9,5 @@ inverted = ''
 while a != 0:
     inverted = str(a%2) + inverted
     a = a // 2
-    print(inverted)
+print(inverted)
 

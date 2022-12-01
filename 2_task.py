@@ -9,9 +9,13 @@ n = int(input('Введите размерность списка: '))
 for i in range(n):
     i = int(input(f'Введите {i+1} значение списка: '))
     list1.append(i)
-print(f'Исходный список: {list1}')
 
+
+i = 0
 list2 = []
-for i in range(n):
-    list2.append(list1[i]*list1[len(list1) - 1 - i])
-print(list2)
+while i < len(list1)/2:
+    res = list1[i]*list1[n-1-i]
+    list2.append(res)
+    
+    i += 1
+print(f'Исходный список: {list1} --> {list2}')

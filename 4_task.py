@@ -5,7 +5,9 @@
 # - 2 -> 10
 
 a = int(input('Введите число: '))
+inverted = ''
 while a != 0:
-    res = a%2
+    inverted = str(a%2) + inverted
     a = a // 2
-    print(res)
+    print(inverted)
+
